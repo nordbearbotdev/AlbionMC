@@ -1,0 +1,38 @@
+name: Albion
+main: xyz.msws.nope.Albion
+version: 1.8.2
+description: 1.16 Minecraft Anticheat
+api-version: 1.16
+author: Commit
+softdepend:
+- ProtocolLib
+- MaxBans
+- AdvancedBan
+- LapisBans
+- LiteBans
+- BanManagement
+- PlaceholderAPI
+- mcMMO
+- CrazyEnchantments
+- Train_Carts
+commands:
+  Albion:
+    usage: /<command>
+    aliases:
+    - ac
+    - anticheat
+permissions:
+  albion.*:
+    description: Gives access to all of Albion`s features and bypasses all Albion checks
+  albion.bypass.movement:
+    description: Allows the player to bypass all movement checks
+  albion.bypass.flight:
+    description: Allows the player to bypass all flight checks
+  albion.bypass.movement.flight#4:
+    description: Allows the player to bypass all flight#4 checks
+  albion.command.toggle.scoreboard:
+    description: Allows the player to toggle their own scoreboard
+  albion.command.toggle.gscoreboard:
+    description: Allows the player to toggle the server's scoreboard
+  albion.command.testlag:
+    description: Allows the player access to the testlag command
